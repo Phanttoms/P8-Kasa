@@ -1,11 +1,12 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import RoutesPath from "./components/RoutesPath";
 
 function App() {
 	return (
 		<>
 			<Header />
-			<p>Tout le content ici</p>
+			<RoutesPath />
 			<Footer />
 		</>
 	);
