@@ -8,7 +8,7 @@ function Collapse({ title, description }) {
 	return (
 		<div className="collapse" id={`collapse-${title}`}>
 			<div className="collapse__box">
-				<h2 className="collapse__box--title">Titre</h2>
+				<h2 className="collapse__box--title">{title}</h2>
 				<img
 					src={arrow}
 					alt="Icône de flèche"
