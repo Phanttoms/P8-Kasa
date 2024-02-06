@@ -1,11 +1,10 @@
 import "../../styles/banner.scss";
-import banner from "../../assets/images/bannerImage.png";
 
-function Banner() {
+function Banner({ image, title }) {
 	return (
 		<div className="banner">
-			<img className="banner__img" src={banner} alt="Bannière du site Kasa" />
-			<h1 className="banner__txt">Chez vous, partout et ailleurs</h1>
+			<img className="banner__img" src={image} alt="Bannière du site Kasa" />
+			<h1 className="banner__txt">{title}</h1>
 		</div>
 	);
 }

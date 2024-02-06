@@ -1,0 +1,34 @@
+@import "./variable/color.scss";
+
+.error {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 8rem 0;
+	gap: 8rem;
+	&__title {
+		color: $red;
+		font-family: "Montserrat", sans-serif;
+		font-size: 18rem;
+		font-style: normal;
+		font-weight: 700;
+		margin: 0;
+	}
+	&__txt {
+		color: $red;
+		font-family: "Montserrat", sans-serif;
+		font-size: 2.2rem;
+		font-style: normal;
+		font-weight: 500;
+		margin: 0;
+	}
+	&__return {
+		color: $black;
+		font-family: "Montserrat", sans-serif;
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: 500;
+	}
+}

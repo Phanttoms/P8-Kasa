@@ -1,0 +1,44 @@
+@import "./variable/color.scss";
+
+.container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	&__box {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		background-color: $grey;
+		width: 95%;
+		height: auto;
+		margin: 3rem 0;
+		padding: 1.5rem 0;
+		border-radius: 1.5rem;
+	}
+}
+
+.card {
+	width: 21rem;
+	height: 21rem;
+	display: flex;
+	margin: 1.5rem;
+	&__img {
+		width: 100%;
+		height: 21rem;
+		border-radius: 0.6rem;
+	}
+	&__title {
+		width: 19rem;
+		color: $white;
+		font-family: "Montserrat", sans-serif;
+		font-size: 1rem;
+		font-style: normal;
+		font-weight: 700;
+		position: absolute;
+		align-self: flex-end;
+		text-wrap: wrap;
+		margin: 1.5rem;
+	}
+}
