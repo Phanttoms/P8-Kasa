@@ -2,7 +2,6 @@ import Banner from "../../components/Banner";
 import banner from "../../assets/images/bannerImage2.png";
 import Collapse from "../../components/Collapse";
 import dataAbout from "../../datas/dataAbout.json";
-import "../../styles/collapse.scss";
 
 function About() {
 	return (

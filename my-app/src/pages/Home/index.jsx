@@ -2,7 +2,6 @@ import Banner from "../../components/Banner";
 import Card from "../../components/Card";
 import Data from "../../datas/data.json";
 import banner from "../../assets/images/bannerImage.png";
-import "../../styles/card.scss";
 
 function Home() {
 	return (

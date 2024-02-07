@@ -1,4 +1,3 @@
-import "../../styles/footer.scss";
 import logo from "../../assets/logos/logoKasaWhite.png";
 
 function Footer() {

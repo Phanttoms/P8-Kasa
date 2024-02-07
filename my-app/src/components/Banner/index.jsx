@@ -1,5 +1,3 @@
-import "../../styles/banner.scss";
-
 function Banner({ image, title }) {
 	return (
 		<div className="banner">

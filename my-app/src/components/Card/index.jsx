@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import "../../styles/card.scss";
 
 function Card({ data }) {
 	const { id, title, cover } = data;
