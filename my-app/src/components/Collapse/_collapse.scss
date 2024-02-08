@@ -8,7 +8,7 @@
 }
 
 .collapse {
-	width: 70%;
+	width: 80%;
 	height: auto;
 	&__box {
 		width: 100%;
@@ -19,6 +19,7 @@
 		background-color: $red;
 		padding: 0.6rem 1.25rem;
 		border-radius: 0.3rem;
+		box-sizing: border-box;
 		&--title {
 			color: $white;
 			font-family: "Montserrat", sans-serif;
@@ -45,6 +46,7 @@
 		height: 0;
 		margin-bottom: 1.8rem;
 		padding: 0rem 1.25rem;
+		box-sizing: border-box;
 		&.true {
 			height: auto;
 			padding: 0.6rem 1.25rem;
