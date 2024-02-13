@@ -22,7 +22,10 @@
 	height: 21rem;
 	display: flex;
 	margin: 1.5rem;
-
+	border-radius: 0.6rem;
+	&:hover {
+		box-shadow: 0.5rem 1rem 1rem 0.5rem $black;
+	}
 	&__img {
 		width: 100%;
 		height: 21rem;
