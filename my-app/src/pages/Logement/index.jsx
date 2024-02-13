@@ -20,17 +20,19 @@ function Logement() {
 	return (
 		<>
 			<Carousel pictures={getData.pictures} />
-			<section>
-				<article>
-					<Title title={getData.title} location={getData.location} />
-					<Tag tag={getData.tags} />
-				</article>
-				<article>
-					<Host host={getData.host} />
-					<Stars rating={getData.rating} />
-				</article>
-			</section>
-			<div> Les collapses</div>
+			<div className="logement-container">
+				<section className="logement">
+					<article className="logement__header">
+						<Title title={getData.title} location={getData.location} />
+						<Tag tag={getData.tags} />
+					</article>
+					<article className="logement__info">
+						<Host host={getData.host} />
+						<Stars rating={getData.rating} />
+					</article>
+				</section>
+				<div> Les collapses</div>
+			</div>
 		</>
 	);
 }

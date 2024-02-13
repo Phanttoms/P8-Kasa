@@ -1,8 +1,10 @@
 function Tag({ tag }) {
 	return (
-		<div>
+		<div className="logement__tags">
 			{tag.map((tag, i) => (
-				<p key={i}>{tag}</p>
+				<p key={i} className="logement__tags--tag">
+					{tag}
+				</p>
 			))}
 		</div>
 	);

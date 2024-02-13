@@ -1,0 +1,24 @@
+.logement__tags {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	gap: 0.6rem;
+	&--tag {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		width: 7rem;
+		height: auto;
+		background-color: $red;
+		border-radius: 0.6rem;
+		font-family: "Montserrat", sans-serif;
+		font-size: 0.875rem;
+		font-style: normal;
+		font-weight: 700;
+		color: $white;
+		margin: 0;
+		padding: 0.2rem;
+	}
+}

@@ -1,0 +1,11 @@
+.stars__container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+	gap: 0.6rem;
+	&--star {
+		width: 1.5rem;
+	}
+}
