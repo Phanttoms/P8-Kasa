@@ -5,12 +5,18 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	@media (max-width: 768px) {
+		height: 7rem;
+	}
 	&__img {
 		filter: brightness(50%);
 		width: 95%;
 		height: 13rem;
 		border-radius: 1.5rem;
 		object-fit: cover;
+		@media (max-width: 768px) {
+			height: 7rem;
+		}
 	}
 	&__txt {
 		color: $white;
@@ -19,5 +25,12 @@
 		font-size: 3rem;
 		font-style: normal;
 		font-weight: 700;
+		background-color: blue;
+		text-align: center;
+		width: 90%;
+		@media (max-width: 768px) {
+			font-size: 1.5rem;
+			text-align: left;
+		}
 	}
 }
