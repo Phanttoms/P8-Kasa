@@ -6,6 +6,7 @@ import Title from "../Title";
 import Tag from "../Tag";
 import Host from "../Host";
 import Stars from "../Stars";
+import Collapse from "../Collapse";
 
 function Logement() {
 	const { id } = useParams();
@@ -20,7 +21,7 @@ function Logement() {
 	return (
 		<>
 			<Carousel pictures={getData.pictures} />
-			<div className="logement-container">
+			<div className="logement__container">
 				<section className="logement">
 					<article className="logement__header">
 						<Title title={getData.title} location={getData.location} />
@@ -31,7 +32,17 @@ function Logement() {
 						<Stars rating={getData.rating} />
 					</article>
 				</section>
-				<div> Les collapses</div>
+				<div className="logement__container__collapse">
+					<Collapse title="Description" description={getData.description} />
+					<Collapse
+						title="Équipements"
+						description={getData.equipments.map((equipment, i) => (
+							<ul key={i}>
+								<li>{equipment}</li>
+							</ul>
+						))}
+					/>
+				</div>
 			</div>
 		</>
 	);

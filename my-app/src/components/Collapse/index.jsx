@@ -20,7 +20,7 @@ function Collapse({ title, description }) {
 				/>
 			</div>
 			<div className={`collapse__txt ${open}`}>
-				<p className={`collapse__txt--txt ${open}`}>{description}</p>
+				<span className={`collapse__txt--txt ${open}`}>{description}</span>
 			</div>
 		</div>
 	);
