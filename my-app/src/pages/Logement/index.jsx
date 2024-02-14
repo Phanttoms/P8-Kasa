@@ -1,4 +1,4 @@
-import Logement from "../../components/Logement";
+import Logement from "../../components/LogementPage";
 
 function LogementPage() {
 	return <Logement />;

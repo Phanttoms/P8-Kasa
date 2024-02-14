@@ -10,6 +10,9 @@
 .collapse {
 	width: 70%;
 	height: auto;
+	@media (max-width: 768px) {
+		width: 95%;
+	}
 	&__box {
 		width: 100%;
 		height: auto;
