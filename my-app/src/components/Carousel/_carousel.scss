@@ -14,6 +14,9 @@
 	position: relative;
 	background-color: $grey;
 	border-radius: 1.5rem;
+	@media (max-width: 768px) {
+		height: 15rem;
+	}
 
 	&__arrow {
 		position: absolute;
@@ -23,6 +26,10 @@
 		align-self: center;
 		margin: 1rem;
 		cursor: pointer;
+		@media (max-width: 768px) {
+			height: 1.5rem;
+			width: 1.5rem;
+		}
 	}
 	.arrow-right {
 		right: 0;
@@ -34,6 +41,9 @@
 		object-fit: cover;
 		opacity: 0;
 		border-radius: 1.5rem;
+		@media (max-width: 768px) {
+			height: 15rem;
+		}
 	}
 	.actif {
 		width: 100%;
@@ -51,5 +61,8 @@
 		font-size: 1.125rem;
 		font-style: normal;
 		font-weight: 500;
+		@media (max-width: 768px) {
+			display: none;
+		}
 	}
 }

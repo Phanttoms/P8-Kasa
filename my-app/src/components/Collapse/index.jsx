@@ -9,7 +9,7 @@ function Collapse({ title, description }) {
 	};
 
 	return (
-		<div className="collapse" id={`collapse-${title}`}>
+		<div className="collapse collapse-logement" id={`collapse-${title}`}>
 			<div className="collapse__box">
 				<h2 className="collapse__box--title">{title}</h2>
 				<img

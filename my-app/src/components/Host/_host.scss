@@ -4,6 +4,7 @@
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-end;
+	align-items: center;
 	gap: 0.6rem;
 	&--txt {
 		color: $red;
@@ -17,5 +18,9 @@
 		width: 4rem;
 		height: 4rem;
 		border-radius: 50%;
+		@media (max-width: 768px) {
+			width: 2rem;
+			height: 2rem;
+		}
 	}
 }

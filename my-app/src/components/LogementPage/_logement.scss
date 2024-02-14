@@ -9,6 +9,15 @@
 		display: flex;
 		flex-direction: row;
 		gap: 4.7rem;
+		@media (max-width: 768px) {
+			flex-direction: column;
+			gap: 0;
+		}
+		.collapse-logement {
+			@media (max-width: 768px) {
+				width: 100%;
+			}
+		}
 	}
 }
 
@@ -18,6 +27,9 @@
 	display: flex;
 	flex-direction: row;
 	margin: 1.8rem 0;
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
 	&__header {
 		width: 50%;
 		height: auto;
@@ -25,6 +37,9 @@
 		flex-direction: column;
 		justify-content: space-between;
 		gap: 1.2rem;
+		@media (max-width: 768px) {
+			width: 100%;
+		}
 	}
 	&__info {
 		width: 50%;
@@ -33,5 +48,9 @@
 		align-items: flex-end;
 		flex-direction: column;
 		justify-content: space-between;
+		@media (max-width: 768px) {
+			width: 100%;
+			flex-direction: row-reverse;
+		}
 	}
 }
