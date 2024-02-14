@@ -24,7 +24,7 @@ function About() {
 	return (
 		<>
 			<Banner image={banner} />
-			<article className="container">
+			<article className="container-collapse">
 				{data &&
 					data.map((collapse) => (
 						<Collapse
