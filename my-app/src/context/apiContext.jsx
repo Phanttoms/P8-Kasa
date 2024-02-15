@@ -5,7 +5,6 @@ const apiContext = createContext();
 export function ApiContextProvider({ children }) {
 	const [logements, setLogements] = useState([]);
 	const [about, setAbout] = useState([]);
-	// const [logement, setLogement] = useState([]);
 	const [isError, setIsError] = useState(false);
 
 	const fetchLogements = async () => {

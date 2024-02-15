@@ -7,6 +7,7 @@ import Host from "../../components/Host";
 import Stars from "../../components/Stars";
 import Collapse from "../../components/Collapse";
 import { useAPI } from "../../context/apiContext";
+import "../../styles/main.scss";
 
 /**
  *

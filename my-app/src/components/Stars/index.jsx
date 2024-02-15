@@ -1,5 +1,6 @@
 import emptyStar from "../../assets/icones/emptyStar.svg";
 import fullStar from "../../assets/icones/fullStar.svg";
+import "../Stars/_stars.scss";
 
 /**
  * Permet d'afficher le bon nombre d'étoiles

@@ -1,3 +1,5 @@
+import "../Banner/_banner.scss";
+
 /**
  * Permet la création de banière contenant une image et un titre
  * @param {{image: URL, title: string}}

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import arrow from "../../assets/icones/arrow.svg";
+import "../Collapse/_collapse.scss";
 
 /**
  * Composant collapse qui permet d'afficher un titre et une description

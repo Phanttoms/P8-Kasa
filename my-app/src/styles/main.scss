@@ -1,17 +1,75 @@
-@import "./Base/base";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import "./Utils/variables";
+body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 
-@import "../components/Banner/banner";
-@import "../components/Card/card";
-@import "../components/Collapse/collapse";
-@import "../components/ErrorPage/error";
-@import "../components/Footer/footer";
-@import "../components/Header/header";
-@import "../components/Carousel/carousel";
-@import "../components/Title/title";
-@import "../components/Tag/tag";
-@import "../components/Host/host";
-@import "../components/Stars/stars";
+li,
+ol {
+	list-style: none;
+}
 
-@import "../pages/Logement/logement";
+ul {
+	padding: 0;
+	margin: 0.3rem 0 0.3rem 0;
+}
+
+// Logement page
+.logement__container {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	&__collapse {
+		width: 95%;
+		display: flex;
+		flex-direction: row;
+		gap: 4.7rem;
+		@media (max-width: 768px) {
+			flex-direction: column;
+			gap: 0;
+		}
+		.collapse-logement {
+			@media (max-width: 768px) {
+				width: 100%;
+			}
+		}
+	}
+}
+
+.logement {
+	width: 95%;
+	height: auto;
+	display: flex;
+	flex-direction: row;
+	margin: 1.8rem 0;
+	@media (max-width: 768px) {
+		flex-direction: column;
+	}
+	&__header {
+		width: 50%;
+		height: auto;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		gap: 1.2rem;
+		@media (max-width: 768px) {
+			width: 100%;
+		}
+	}
+	&__info {
+		width: 50%;
+		height: auto;
+		display: flex;
+		align-items: flex-end;
+		flex-direction: column;
+		justify-content: space-between;
+		@media (max-width: 768px) {
+			width: 100%;
+			flex-direction: row-reverse;
+		}
+	}
+}

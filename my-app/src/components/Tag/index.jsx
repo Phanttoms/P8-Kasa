@@ -1,3 +1,5 @@
+import "../Tag/_tag.scss";
+
 /**
  * Permet d'afficher les tag
  * @param {{tag: Array}} tag - Tableau contenant les tag de l'apartement

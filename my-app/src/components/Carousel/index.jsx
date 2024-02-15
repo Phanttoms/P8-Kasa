@@ -1,5 +1,6 @@
 import { useState } from "react";
 import arrow from "../../assets/icones/vector.svg";
+import "../Carousel/_carousel.scss";
 
 /**
  * Permet d'afficher la photo dans un carousel

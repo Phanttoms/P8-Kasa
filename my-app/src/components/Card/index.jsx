@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "../Card/_card.scss";
 
 /**
  * Permet d'afficher une carte contenant la Photo, le Titre et un Id pour un logement

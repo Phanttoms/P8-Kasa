@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "../ErrorPage/_error.scss";
 
 /**
  * Permet d'afficher une page d'erreur 404 en cas d'adresse invalide

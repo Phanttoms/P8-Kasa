@@ -1,4 +1,5 @@
 import logo from "../../assets/logos/logoKasaWhite.png";
+import "../Footer/_footer.scss";
 
 /**
  * Permet d'afficher une banderole contenant un logo et du text en bas de page

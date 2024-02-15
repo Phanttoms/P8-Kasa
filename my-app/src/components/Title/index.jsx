@@ -1,3 +1,5 @@
+import "../Title/_title.scss";
+
 /**
  * Permet de creer le titre et la location de l'apartement
  * @param {{title: string, location: string}}
