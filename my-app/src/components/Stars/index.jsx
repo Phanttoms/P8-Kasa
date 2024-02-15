@@ -1,6 +1,12 @@
 import emptyStar from "../../assets/icones/emptyStar.svg";
 import fullStar from "../../assets/icones/fullStar.svg";
 
+/**
+ * Permet d'afficher le bon nombre d'étoiles
+ * @param {{rating: number}} rating - La note de l'hôte
+ * @return Le nombre d'étoiles pleines et vide en fonction du paramétre passé
+ */
+
 function Stars({ rating }) {
 	const allStars = [1, 2, 3, 4, 5];
 	return (

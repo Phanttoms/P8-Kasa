@@ -1,3 +1,9 @@
+/**
+ * Permet de creer le titre et la location de l'apartement
+ * @param {{title: string, location: string}}
+ * @returns du HTML
+ */
+
 function Title({ title, location }) {
 	return (
 		<>

@@ -1,3 +1,9 @@
+/**
+ * Permet d'afficher le nom et la photo de l'hôte
+ * @param {Object} host - objet contenant le nom et la photo de l'hôte
+ * @return Le HTML de Host
+ */
+
 function Host({ host }) {
 	return (
 		<div className="logement__host">

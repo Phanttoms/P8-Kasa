@@ -1,3 +1,9 @@
+/**
+ * Permet d'afficher les tag
+ * @param {{tag: Array}} tag - Tableau contenant les tag de l'apartement
+ * @returns le HTML permetant d'afficher les tag
+ */
+
 function Tag({ tag }) {
 	return (
 		<div className="logement__tags">

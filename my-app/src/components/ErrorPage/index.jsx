@@ -1,5 +1,10 @@
 import { Link } from "react-router-dom";
 
+/**
+ * Permet d'afficher une page d'erreur 404 en cas d'adresse invalide
+ * @returns Du HTML contenant un message d'erreur
+ */
+
 function Error() {
 	return (
 		<div className="error">

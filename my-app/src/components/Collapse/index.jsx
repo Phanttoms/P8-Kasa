@@ -1,6 +1,12 @@
 import { useState } from "react";
 import arrow from "../../assets/icones/arrow.svg";
 
+/**
+ * Composant collapse qui permet d'afficher un titre et une description
+ * @param {{title: string, description: string}}
+ * @return Une fenetre ouvrable au clic contenant les paramètres
+ */
+
 function Collapse({ title, description }) {
 	const [open, setOpen] = useState(false);
 

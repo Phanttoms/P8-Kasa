@@ -8,6 +8,11 @@ import Host from "../Host";
 import Stars from "../Stars";
 import Collapse from "../Collapse";
 
+/**
+ *
+ * @returns Le contenu de la page Logement
+ */
+
 function Logement() {
 	const { id } = useParams();
 	const getData = Data.find((apart) => {

@@ -1,6 +1,11 @@
 import { Link, NavLink } from "react-router-dom";
 import logo from "../../assets/logos/logoKasa.svg";
 
+/**
+ * Permet d'afficher une banderole contenant un Logo et une nav bar en haut de l'ecran
+ * @returns Le HTML du Header
+ */
+
 function Header() {
 	return (
 		<div className="header-container">

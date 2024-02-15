@@ -1,3 +1,9 @@
+/**
+ * Permet la création de banière contenant une image et un titre
+ * @param {{image: URL, title: string}}
+ * @return Le HTML de la banière
+ */
+
 function Banner({ image, title }) {
 	return (
 		<div className="banner">

@@ -1,5 +1,10 @@
 import logo from "../../assets/logos/logoKasaWhite.png";
 
+/**
+ * Permet d'afficher une banderole contenant un logo et du text en bas de page
+ * @returns Le HTML du Footer
+ */
+
 function Footer() {
 	return (
 		<footer className="footer">

@@ -4,6 +4,11 @@ import About from "../../pages/About";
 import Error from "../../pages/Error";
 import Logement from "../../pages/Logement";
 
+/**
+ * Permet d'afficher automatiquement la bonne page en fonction de l'url
+ * @returns Les pages corespondant à leur chemin
+ */
+
 function RoutesPath() {
 	return (
 		<Routes>
