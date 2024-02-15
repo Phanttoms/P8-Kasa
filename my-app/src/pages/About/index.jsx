@@ -1,32 +1,17 @@
 import Banner from "../../components/Banner";
 import banner from "../../assets/images/bannerImage2.png";
 import Collapse from "../../components/Collapse";
-import { useState, useEffect } from "react";
+import { useAPI } from "../../context/apiContext";
 
 function About() {
-	const [data, setData] = useState(null);
+	const { about } = useAPI();
 
-	useEffect(() => {
-		const fetchData = async () => {
-			try {
-				const response = await import("../../datas/dataAbout.json");
-
-				const jsonData = response.default;
-
-				setData(jsonData);
-			} catch (error) {
-				console.log("Erreur:", error);
-			}
-		};
-
-		fetchData();
-	}, []);
 	return (
 		<>
 			<Banner image={banner} />
 			<article className="container-collapse">
-				{data &&
-					data.map((collapse) => (
+				{about &&
+					about.map((collapse) => (
 						<Collapse
 							key={collapse.id}
 							title={collapse.title}
