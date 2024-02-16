@@ -5,7 +5,7 @@ import "../Carousel/_carousel.scss";
 /**
  * Permet d'afficher la photo dans un carousel
  * @param {Object} picture - Donne un objet contenant une ou plusieurs photo
- * @return Un Slide de photo contenant toutes les photos passé en argument
+ * @return {JSX.Element} Un Slide de photo contenant toutes les photos passé en argument
  */
 
 function Carousel({ pictures }) {

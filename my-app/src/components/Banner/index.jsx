@@ -3,7 +3,7 @@ import "../Banner/_banner.scss";
 /**
  * Permet la création de banière contenant une image et un titre
  * @param {{image: URL, title: string}}
- * @return Le HTML de la banière
+ * @return {JSX.Element} Le HTML de la banière
  */
 
 function Banner({ image, title }) {

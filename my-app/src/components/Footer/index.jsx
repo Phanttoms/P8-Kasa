@@ -3,7 +3,7 @@ import "../Footer/_footer.scss";
 
 /**
  * Permet d'afficher une banderole contenant un logo et du text en bas de page
- * @returns Le HTML du Footer
+ * @returns {JSX.Element} Le HTML du Footer
  */
 
 function Footer() {

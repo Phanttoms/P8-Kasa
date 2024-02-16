@@ -5,7 +5,7 @@ import "../Collapse/_collapse.scss";
 /**
  * Composant collapse qui permet d'afficher un titre et une description
  * @param {{title: string, description: string}}
- * @return Une fenetre ouvrable au clic contenant les paramètres
+ * @return {JSX.Element} Une fenetre ouvrable au clic contenant les paramètres
  */
 
 function Collapse({ title, description }) {
