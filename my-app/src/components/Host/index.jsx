@@ -5,7 +5,6 @@ import "../Host/_host.scss";
  * @param {Object} host - objet contenant le nom et la photo de l'hôte
  * @return {JSX.Element} Le HTML de Host
  */
-
 function Host({ host }) {
 	return (
 		<div className="logement__host">

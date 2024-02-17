@@ -9,11 +9,6 @@ import Collapse from "../../components/Collapse";
 import { useAPI } from "../../context/apiContext";
 import "../../styles/main.scss";
 
-/**
- *
- * @returns Le contenu de la page Logement
- */
-
 function Logement() {
 	const { id } = useParams();
 	const { getLogementById } = useAPI();

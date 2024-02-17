@@ -5,7 +5,6 @@ import "../Tag/_tag.scss";
  * @param {{tag: Array}} tag - Tableau contenant les tag de l'apartement
  * @returns {JSX.Element} le HTML permetant d'afficher les tag
  */
-
 function Tag({ tag }) {
 	return (
 		<div className="logement__tags">

@@ -5,7 +5,6 @@ import "../Title/_title.scss";
  * @param {{title: string, location: string}}
  * @returns {JSX.Element} du HTML
  */
-
 function Title({ title, location }) {
 	return (
 		<>

@@ -6,7 +6,6 @@ import "../Card/_card.scss";
  * @param {Object} data - Information pour l'id, le titre et la photo de couverture
  * @return {JSX.Element} Une carte
  */
-
 function Card({ data }) {
 	const { id, title, cover } = data;
 	return (

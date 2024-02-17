@@ -6,7 +6,6 @@ import "../Header/_header.scss";
  * Permet d'afficher une banderole contenant un Logo et une nav bar en haut de l'ecran
  * @returns {JSX.Element} Le HTML du Header
  */
-
 function Header() {
 	return (
 		<div className="header-container">

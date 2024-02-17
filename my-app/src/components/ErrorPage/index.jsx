@@ -5,7 +5,6 @@ import "../ErrorPage/_error.scss";
  * Permet d'afficher une page d'erreur 404 en cas d'adresse invalide
  * @returns {JSX.Element} Du HTML contenant un message d'erreur
  */
-
 function Error() {
 	return (
 		<div className="error">

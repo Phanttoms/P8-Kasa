@@ -7,7 +7,6 @@ import "../Collapse/_collapse.scss";
  * @param {{title: string, description: string}}
  * @return {JSX.Element} Une fenetre ouvrable au clic contenant les paramètres
  */
-
 function Collapse({ title, description }) {
 	const [open, setOpen] = useState(false);
 

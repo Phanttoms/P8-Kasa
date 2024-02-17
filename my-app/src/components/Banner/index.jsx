@@ -5,7 +5,6 @@ import "../Banner/_banner.scss";
  * @param {{image: URL, title: string}}
  * @return {JSX.Element} Le HTML de la banière
  */
-
 function Banner({ image, title }) {
 	return (
 		<div className="banner">
@@ -16,16 +15,3 @@ function Banner({ image, title }) {
 }
 
 export default Banner;
-
-// MODIFIER TOUT LES RETURN DE LA JSDOC IMPORTANT §§§§§§§§§§§§§§
-// MODIFIER TOUT LES RETURN DE LA JSDOC IMPORTANT §§§§§§§§§§§§§§
-// MODIFIER TOUT LES RETURN DE LA JSDOC IMPORTANT §§§§§§§§§§§§§§
-// MODIFIER TOUT LES RETURN DE LA JSDOC IMPORTANT §§§§§§§§§§§§§§
-// MODIFIER TOUT LES RETURN DE LA JSDOC IMPORTANT §§§§§§§§§§§§§§
-// MODIFIER TOUT LES RETURN DE LA JSDOC IMPORTANT §§§§§§§§§§§§§§
-// MODIFIER TOUT LES RETURN DE LA JSDOC IMPORTANT §§§§§§§§§§§§§§
-// MODIFIER TOUT LES RETURN DE LA JSDOC IMPORTANT §§§§§§§§§§§§§§
-// MODIFIER TOUT LES RETURN DE LA JSDOC IMPORTANT §§§§§§§§§§§§§§
-// MODIFIER TOUT LES RETURN DE LA JSDOC IMPORTANT §§§§§§§§§§§§§§
-// MODIFIER TOUT LES RETURN DE LA JSDOC IMPORTANT §§§§§§§§§§§§§§
-// MODIFIER TOUT LES RETURN DE LA JSDOC IMPORTANT §§§§§§§§§§§§§§
