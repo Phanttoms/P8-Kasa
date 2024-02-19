@@ -6,6 +6,7 @@ export function ApiContextProvider({ children }) {
 	const [logements, setLogements] = useState([]);
 	const [about, setAbout] = useState([]);
 	const [isError, setIsError] = useState(false);
+	const [isLoading, setIsLoading] = useState(true);
 
 	// Récuperation de tout les logements
 	const fetchLogements = async () => {
@@ -14,15 +15,16 @@ export function ApiContextProvider({ children }) {
 
 			const jsonData = response.default;
 
-			setIsError(false);
 			setLogements(jsonData);
 		} catch (error) {
 			setIsError(true);
+		} finally {
+			setIsLoading(false);
 		}
 	};
 	useEffect(() => {
 		fetchLogements();
-	}, [logements]);
+	}, []);
 
 	// Récuperation du fichier contenant le text de la page About
 	const fetchAbout = async () => {
@@ -31,27 +33,24 @@ export function ApiContextProvider({ children }) {
 
 			const jsonData = response.default;
 
-			setIsError(false);
 			setAbout(jsonData);
 		} catch (error) {
 			setIsError(true);
+		} finally {
+			setIsLoading(false);
 		}
 	};
 	useEffect(() => {
 		fetchAbout();
-	}, [about]);
+	}, []);
 
-	// // Fonction pour return un seul logement
-	// const getLogementById = (id) => {
-	// 	setIsError(false);
-	// 	const data = logements.find((apart) => {
-	// 		return apart.id === id;
-	// 	});
-	// 	if (data === undefined) {
-	// 		setIsError(true);
-	// 	}
-	// 	return data;
-	// };
+	// Fonction pour return un seul logement
+	//un peu de refacto pour éviter d'appeler une variable une seule fois et de la retourner tout de suite
+	const getLogementById = (id) => {
+		return logements.find((apart) => {
+			return apart.id === id;
+		});
+	};
 
 	return (
 		<apiContext.Provider
@@ -59,7 +58,8 @@ export function ApiContextProvider({ children }) {
 				logements,
 				about,
 				isError,
-				// getLogementById,
+				getLogementById,
+				isLoading,
 			}}
 		>
 			{children}
