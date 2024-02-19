@@ -7,6 +7,7 @@ export function ApiContextProvider({ children }) {
 	const [about, setAbout] = useState([]);
 	const [isError, setIsError] = useState(false);
 
+	// Récuperation de tout les logements
 	const fetchLogements = async () => {
 		try {
 			const response = await import("../datas/data.json");
@@ -22,6 +23,7 @@ export function ApiContextProvider({ children }) {
 		fetchLogements();
 	}, [logements]);
 
+	// Récuperation du fichier contenant le text de la page About
 	const fetchAbout = async () => {
 		try {
 			const response = await import("../datas/dataAbout.json");
@@ -37,6 +39,7 @@ export function ApiContextProvider({ children }) {
 		fetchAbout();
 	}, [about]);
 
+	// Fonction pour return un seul logement
 	const getLogementById = (id) => {
 		const data = logements.find((apart) => {
 			return apart.id === id;
