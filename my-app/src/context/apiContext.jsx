@@ -14,6 +14,7 @@ export function ApiContextProvider({ children }) {
 
 			const jsonData = response.default;
 
+			setIsError(false);
 			setLogements(jsonData);
 		} catch (error) {
 			setIsError(true);
@@ -30,6 +31,7 @@ export function ApiContextProvider({ children }) {
 
 			const jsonData = response.default;
 
+			setIsError(false);
 			setAbout(jsonData);
 		} catch (error) {
 			setIsError(true);
@@ -39,13 +41,17 @@ export function ApiContextProvider({ children }) {
 		fetchAbout();
 	}, [about]);
 
-	// Fonction pour return un seul logement
-	const getLogementById = (id) => {
-		const data = logements.find((apart) => {
-			return apart.id === id;
-		});
-		return data;
-	};
+	// // Fonction pour return un seul logement
+	// const getLogementById = (id) => {
+	// 	setIsError(false);
+	// 	const data = logements.find((apart) => {
+	// 		return apart.id === id;
+	// 	});
+	// 	if (data === undefined) {
+	// 		setIsError(true);
+	// 	}
+	// 	return data;
+	// };
 
 	return (
 		<apiContext.Provider
@@ -53,7 +59,7 @@ export function ApiContextProvider({ children }) {
 				logements,
 				about,
 				isError,
-				getLogementById,
+				// getLogementById,
 			}}
 		>
 			{children}
