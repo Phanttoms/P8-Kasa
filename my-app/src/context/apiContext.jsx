@@ -11,9 +11,9 @@ export function ApiContextProvider({ children }) {
 	// Récuperation de tout les logements
 	const fetchLogements = async () => {
 		try {
-			const response = await import("../datas/data.json");
+			const response = await fetch("http://localhost:3000/datas/data.json");
 
-			const jsonData = response.default;
+			const jsonData = await response.json();
 
 			setLogements(jsonData);
 		} catch (error) {
@@ -29,9 +29,11 @@ export function ApiContextProvider({ children }) {
 	// Récuperation du fichier contenant le text de la page About
 	const fetchAbout = async () => {
 		try {
-			const response = await import("../datas/dataAbout.json");
+			const response = await fetch(
+				"http://localhost:3000/datas/dataAbout.json"
+			);
 
-			const jsonData = response.default;
+			const jsonData = await response.json();
 
 			setAbout(jsonData);
 		} catch (error) {
