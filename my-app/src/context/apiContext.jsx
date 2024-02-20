@@ -47,7 +47,6 @@ export function ApiContextProvider({ children }) {
 	}, []);
 
 	// Fonction pour return un seul logement
-	//un peu de refacto pour éviter d'appeler une variable une seule fois et de la retourner tout de suite
 	const getLogementById = (id) => {
 		return logements.find((apart) => {
 			return apart.id === id;
