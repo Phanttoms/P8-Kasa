@@ -1,0 +1,59 @@
+@import "../../styles//Utils/variables";
+
+.loading {
+	width: 100%;
+	height: 35rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	&__spinner {
+		width: 3rem;
+		height: 3rem;
+		border-radius: 50%;
+		position: relative;
+		animation: rotate 1s linear infinite;
+	}
+	&__spinner::before,
+	&__spinner::after {
+		content: "";
+		box-sizing: border-box;
+		position: absolute;
+		inset: 0;
+		border-radius: 50%;
+		border: 0.3rem solid $grey;
+		animation: spin 2s linear infinite;
+	}
+	&__spinner::after {
+		transform: rotate3d(90, 90, 0, 180deg);
+		border-color: $red;
+	}
+	&__txt {
+		font-family: "Montserrat", sans-serif;
+		color: $black;
+		font-size: normal;
+		font-style: 400;
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes spin {
+	0% {
+		clip-path: polygon(50% 50%, 0 0, 0 0, 0 0, 0 0, 0 0);
+	}
+	50% {
+		clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 0, 100% 0, 100% 0);
+	}
+	75%,
+	100% {
+		clip-path: polygon(50% 50%, 0 0, 100% 0, 100% 100%, 100% 100%, 100% 100%);
+	}
+}

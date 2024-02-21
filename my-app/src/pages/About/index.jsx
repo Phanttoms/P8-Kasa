@@ -2,9 +2,14 @@ import Banner from "../../components/Banner";
 import banner from "../../assets/images/bannerImage2.png";
 import Collapse from "../../components/Collapse";
 import { useAPI } from "../../context/apiContext";
+import Loader from "../../components/Loader";
 
 function About() {
-	const { about } = useAPI();
+	const { about, isLoading } = useAPI();
+
+	if (isLoading) {
+		return <Loader />;
+	}
 
 	return (
 		<>

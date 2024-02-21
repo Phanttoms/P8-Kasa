@@ -8,6 +8,7 @@ import Stars from "../../components/Stars";
 import Collapse from "../../components/Collapse";
 import { useAPI } from "../../context/apiContext";
 import "../../styles/main.scss";
+import Loader from "../../components/Loader";
 
 function Logement() {
 	const { id } = useParams();
@@ -15,8 +16,7 @@ function Logement() {
 	const getData = getLogementById(id);
 
 	if (isLoading) {
-		// tu peux créer un composant spinner pour le chargement
-		return <p>En chargement...</p>;
+		return <Loader />;
 	}
 
 	return (
