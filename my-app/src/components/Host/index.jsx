@@ -2,7 +2,7 @@ import "../Host/_host.scss";
 
 /**
  * Permet d'afficher le nom et la photo de l'hôte
- * @param {Object} host - objet contenant le nom et la photo de l'hôte
+ * @param {{Object}} host - objet contenant le nom et la photo de l'hôte
  * @return {JSX.Element} Le HTML de Host
  */
 function Host({ host }) {
