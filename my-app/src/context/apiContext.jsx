@@ -1,4 +1,6 @@
 import { createContext, useContext, useEffect, useState } from "react";
+import jsonData from "../datas/data.json";
+import jsonDataAbout from "../datas/dataAbout.json";
 
 const apiContext = createContext();
 
@@ -11,10 +13,6 @@ export function ApiContextProvider({ children }) {
 	// Récuperation de tout les logements
 	const fetchLogements = async () => {
 		try {
-			const response = await fetch("http://localhost:3000/datas/data.json");
-
-			const jsonData = await response.json();
-
 			setLogements(jsonData);
 		} catch (error) {
 			setIsError(true);
@@ -29,13 +27,7 @@ export function ApiContextProvider({ children }) {
 	// Récuperation du fichier contenant le text de la page About
 	const fetchAbout = async () => {
 		try {
-			const response = await fetch(
-				"http://localhost:3000/datas/dataAbout.json"
-			);
-
-			const jsonData = await response.json();
-
-			setAbout(jsonData);
+			setAbout(jsonDataAbout);
 		} catch (error) {
 			setIsError(true);
 		} finally {
